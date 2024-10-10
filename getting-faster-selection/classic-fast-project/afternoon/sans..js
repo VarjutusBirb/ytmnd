@@ -39,37 +39,37 @@ function update() {
 	document.getElementById("sans").style.left = ((rate - Math.random() * rate * 2)+((divwidth-500)/2)) + "px";
 	sansrot = sansrot + ((Math.round(Math.random()) * 4 - sansmod) * rate)
 	if (rate <= 0.9 && rate > 0.85) {
-		document.title = "Sans... What are you doing?"
+		document.title = "Agent... what are you looking for?"
 	}
 	if (rate <= 0.85 && rate > 0.8) {
-		document.title = "Stop it Sans."
+		document.title = "Are you acting... a little lazy?"
 	}
 	if (rate <= 0.8 && rate > 0.75) {
-		document.title = "Sans!"
+		document.title = "Come on Agent, wake up!"
 	}
 	if (rate <= 0.75 && rate > 0.7) {
-		document.title = "Quit it out!"
+		document.title = "Look for something new!"
 	}
 	if (rate <= 0.7 && rate > 0.65) {
-		document.title = "If you don't stop this instant I'm calling Toriel!"
+		document.title = "If you continue to act lazy one more time, I'm calling Violet Nightshade!"
 	}
 	if (rate <= 0.65 && rate > 0.6) {
-		document.title = "Sans?"
+		document.title = "..."
 	}
 	if (rate <= 0.6 && rate > 0.55) {
-		document.title = "Are you okay Sans?"
+		document.title = "Uhhh... Agent?"
 	}
 	if (rate <= 0.55 && rate > 0.5) {
-		document.title = "I'm going to go get help."
+		document.title = "You don't look very well... I guess."
 	}
 	if (rate <= 0.50) {
-		document.title = "SANS. EXCEPT IT KEEPS GETTING SLOWER?"
+		document.title = "I'll try to find more evidence by myself."
 	}
-	if (rate == 0.0001) {
-		document.title = '\uD83D\uDCA7\u264B\u25A0\u2B27\u270D'
+	if (rate == 0.10) {
+		document.title = 'New Message Received!'
 		bottomcount++
 		if (bottomcount => 100) {
-			window.location.replace("https://walle303.github.io/ytmnd/gast-getting-gaster/");
+			window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
 		}	
 	}
 	requestAnimationFrame(update);
